@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link rel="icon" type="image/x-icon" href="assets/img/perfil.png">
+        <title>melerodev - Estudiante de Desarrollo de Aplicaciones Web</title>
+    </head>
+    <audio id="sonido" src="assets\sounds\click.ogg"></audio>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5GK76VM3BN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-5GK76VM3BN');
+    </script>
+    <script>
+        window.onclick = function(event) {
+            // Reproducir sonido al hacer clic en cualquier lado
+            sonido.currentTime = 0; // Reiniciar el sonido
+            sonido.play(); // Reproducir el sonido
+        }
+    </script>
+
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Alejandro</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> Sonbre mi
+                            </a>
+                        </li>
+                        <!--<li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
+                        </li>-->
+                        <!--<li class="nav__item">
+                            <a href="#newsletter" class="nav__link">
+                                <i class="uil uil-newspaper nav__icon"></i> Podcast
+                            </a>
+                        </li>-->
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-comment-info nav__icon"></i></i> Contáctame
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!--Theme change button-->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/alejandro-melero-zhohal-85392a302/" target="_blank" rel="noopener noreferrer"
+                                class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="https://github.com/MacREpiC/" target="_blank" rel="noopener noreferrer"
+                                class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@Mac-mu9rf" target="_blank" rel="noopener noreferrer"
+                                class="home__social-icon">
+                                <i class="uil uil-youtube"></i>
+                            </a>
+                            
+                            <a href="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnV5YWRrZmx4Z2owMDRpM2k4cWZrbWV3YWdhNGR6dnd2cG13cWg3YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xEpTspH9hGwHS/giphy.gif" target="_blank" rel="noopener noreferrer"
+                                class="home__social-icon">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                            
+                            <a href="https://x.com/MacREpiC8Z" target="_blank" rel="noopener noreferrer"
+                                class="home__social-icon">
+                                <i class="uil uil-twitter-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
+                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                    <image class="home__blob-img" x=0 y=0 xlink:href="assets/img/perfil.png" />
+                                </g>
+                            </svg>
+
+                        </div>
+                        <div class="home__data">
+                            <h1 class="home__title">Hola, soy Alejandro</h1>
+                            <h5 class="home__aka">España</h5>
+                            <h3 class="home__subtitle">Estudiante de Desarrollo de Aplicaciones Web</h3>
+                            <p class="home__description">Informático en general...</p>
+                            <a href="#contact" class="button button--flex">
+                                Contáctame <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home_scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Desplácese hacia abajo</span>
+                            <i class="uil uil-arrow-down homw__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title"> Sobre mi</h2>
+                <span class="section__subtitle">Mi introducción</span>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <p class="about__description">
+                            "Puedo aceptar el fracaso, todo el mundo fracasa en algo.<br>Pero no puedo aceptar no intentarlo."
+                            <br>- Michael Jordan -
+
+                        </p>
+
+                        <div class="about__info">
+                            <!--
+                            <div >
+                                <span class="about__info-title">xx+</span>
+                                <span class="about__info-name">ipsum lorem <br> ipsum lorem </span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">xx+</span>
+                                <span class="about__info-name">ipsum lorem <br> ipsum lorem </span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">xx+</span>
+                                <span class="about__info-name">ipsum lorem <br> ipsum lorem </span>
+                            </div>
+                        -->
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section">
+                <h2 class="section__title">Calificaciones</h2>
+                <div class="section__subtitle">Mi viaje personal</div>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Educación
+                        </div>
+
+                        <!--<div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Work
+                        </div>-->
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!--===============================QUALIFICATION CONTENT 1 ===========================-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--===============================QUALIFICATION 1 ===========================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Técnico en Microsistemas Informáticos y Redes</h3>
+                                    <span class="qualification__subtitle">I.E.S. Al-Ándalus, España</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Septiembre 2021 - Júnio 2023
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!--===============================QUALIFICATION 2 ===========================-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Desarrollo de Aplicaciones Web</h3>
+                                    <span class="qualification__subtitle">I.E.S. Al-Ándalus, España</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Septiembre 2023 - Cargando...
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--===============================QUALIFICATION 3 ===========================-->
+                            <!--<div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Computer Systems - Engineering degree</h3>
+                                    <span class="qualification__subtitle">Ecole nationale Superieure d'Informatique (ESI),
+                                        Algeria</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        September 2014 - June 2019
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+                            </div>
+
+                        </div>-->
+                        <!--===============================QUALIFICATION CONTENT 2 ===========================-->
+                        <div class="qualification__content" data-content id="work">
+                            <!--===============================QUALIFICATION 1 ===========================
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Software Development Engineer</h3>
+                                    <span class="qualification__subtitle">
+                                        <a href="https://www.aws.amazon.com/" target="_blank"
+                                            rel="noopener noreferrer">Amazon Web Services (AWS)</a>
+                                    </span>
+                                    <h5 class="qualification__location">Dublin, Ireland</h5>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        September 2022 - Present
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>-->
+
+                            <!--===============================QUALIFICATION 2 ===========================
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Embedded Software Engineer</h3>
+                                    <span class="qualification__subtitle">
+                                        <a href="https://www.munic.io/" target="_blank" rel="noopener noreferrer">MUNIC</a>
+                                    </span>
+                                    <h5 class="qualification__location">Paris, France</h5>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        February 2021 - July 2022
+                                    </div>
+                                </div>
+                            </div>-->
+
+                            <!--===============================QUALIFICATION 3 ===========================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">3D Deep learning - R&D Intern</h3>
+                                    <span class="qualification__subtitle">
+                                        <a href="https://www.samp.ai/" target="_blank" rel="noopener noreferrer">SAMP</a>
+                                    </span>
+                                    <h5 class="qualification__location">Paris, France</h5>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        February 2020 - September 2020
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--===============================QUALIFICATION 4 ===========================-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Summer Student & DevOps Intern</h3>
+                                    <span class="qualification__subtitle">
+                                        <a href="https://www.home.cern/" target="_blank" rel="noopener noreferrer">European
+                                            Organization for Nuclear
+                                            Research (CERN)</a>
+                                    </span>
+                                    <h5 class="qualification__location">Geneva, Switzerland</h5>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        June 2019 - August 2019
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--===============================QUALIFICATION 5 ===========================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Research Intern</h3>
+                                    <span class="qualification__subtitle">
+                                        <a href="https://www.esi.dz/" target="_blank" rel="noopener noreferrer">Ecole
+                                            nationale Superieure
+                                            d'Informatique (ESI)</a>
+                                    </span>
+                                    <h5 class="qualification__location">Algiers, Algeria</h5>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        September 2018 - June 2019
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--===============================QUALIFICATION 6 ===========================-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Junior Software Developper</h3>
+                                    <span class="qualification__subtitle">
+                                        <a href="https://www.elcsresearch.com/" target="_blank"
+                                            rel="noopener noreferrer">ELCS RESEARCH</a>
+                                    </span>
+                                    <h5 class="qualification__location">Algiers, Algeria</h5>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        July 2015 - July 2018
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--==================== PORTFOLIO ====================
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">ipsum lorem</span>
+
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">-->
+            <!--======================== PORTFOLIO 1 =============
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio1.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">ipsum lorem</h3>
+                                <p class="portfolio__description">
+                                    ipsum lorem
+                                </p>
+                                <a href="https://help.qlik.com/en-US/sense/February2022/Subsystems/Hub/Content/Sense_Hub/ChartFunctions/RankingFunctions/KMeansND.htm" target="_blank" rel="noopener noreferrer" class="button button--flex button--small portfolio__button">
+                                    More info
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>-->
+
+            <!--======================== PORTFOLIO 2 =============
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio2.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">ipsum lorem</h3>
+                                <p class="portfolio__description">
+                                    ipsum lorem
+                                </p>
+                                <a href="https://help.qlik.com/en-US/cloud-services/Subsystems/Hub/Content/Sense_Hub/ChartFunctions/RankingFunctions/KmeansCentroidExample.htm#:~:text=Note%20that%20Qlik%20Sense%20KMeans,for%20that%20dataset%20is%20determined." target="_blank" rel="noopener noreferrer" class="button button--flex button--small portfolio__button">
+                                    More info
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>-->
+
+            <!--======================== PORTFOLIO 3 =============
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio3.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">ipsum lorem</h3>
+                                <p class="portfolio__description">
+                                    ipsum lorem
+                                </p>
+                                <a href="https://help.qlik.com/en-US/cloud-services/Subsystems/Hub/Content/Sense_Hub/ChartFunctions/StatisticalAggregationFunctionsinCharts/MutualInfo.htm" target="_blank" rel="noopener noreferrer" class="button button--flex button--small portfolio__button">
+                                    More info
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>-->
+            <!--============ Add Arrows =============
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>-->
+
+            <!--============ Add Pagination =============
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>-->
+
+            <!--==================== PAPERS ====================
+            <section class="papers section" id="papers">
+                <h2 class="section__title">Papers Published</h2>
+                <span class="section__subtitle">My contribution to research</span>
+
+                <div class="skills__container container grid">
+                    <div>-->
+                        <!--====================== SKILLS 1 =============================
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-file-alt skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">QBSO-FS: A reinforcement learning based bee swarm optimization
+                                        metaheuristic for feature selection</h1>
+                                    <span class="skills__subtitle">2019</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <span class="skills__subtitle">Sadeg, S., Hamdad, L., Remache, A. R., Karech, M. N.,
+                                        Benatchba, K., & Habbas, Z. (2019). Qbso-fs: A reinforcement learning based bee
+                                        swarm optimization metaheuristic for feature selection.<br></span>
+                                    <i class="skills__subtitle">In Advances in Computational Intelligence: 15th
+                                        International Work-Conference on Artificial Neural Networks, IWANN 2019, Gran
+                                        Canaria, Spain, June 12-14, 2019, Proceedings, Part II 15 (pp. 785-796). Springer
+                                        International Publishing.</i>
+                                    <span class="skills__subtitle"><br><br></span>
+                                    <a href="https://paperswithcode.com/paper/qbso-fs-a-reinforcement-learning-based-bee"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="button button--flex button--small portfolio__button">
+                                        Read here
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+            </section>-->
+
+
+            <!--==================== NEWSLETTER ====================
+            <section class="newsletter" id="newsletter">
+                <h2 class="section__title">Podcast</h2>
+                <span class="section__subtitle">Statistically significant topics</span>
+                <div style="text-align:center;">
+                    <a href="https://www.instagram.com/wledhormatalks/" target="_blank" rel="noopener noreferrer"
+                        class="button button--flex button--small portfolio__button">
+                        Subscribe
+                    </a>
+                </div>
+            </section>-->
+
+            <!--==================== TESTIMONIAL ====================
+            <section class="testimonial section">-->
+                <!--=======This feature is skipped for now========
+            </section>-->
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contáctame</h2>
+                <span class="section__subtitle">Póngase en contacto</span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <form method="post" action="https://formspree.io/f/xanwdyow" class="contact__form grid">
+                            <div class="contact__inputs grid">
+                                <div class="contact__content">
+                                    <label for="name" class="contact__label">Nombre</label>
+                                    <input type="text" name="Name" class="contact__input">
+                                </div>
+
+                                <div class="contact__content">
+                                    <label for="email" class="contact__label">Email</label>
+                                    <input type="email" name="Email" class="contact__input">
+                                </div>
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="project-contact" class="contact__label">Asunto</label>
+                                <input type="text" name="Subject" class="contact__input">
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="message-contact" class="contact__label">Mensaje</label>
+                                <textarea name="Message" cols="0" rows="7" id="message-contact"
+                                    class="contact__input"></textarea>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="button button--flex">Enviar mensaje
+                                    <i class="uil uil-message button__icon"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h5 class="footer__title">Alejandro</h5>
+                        <span class="footer__subtitle">Estudiante de Desarrollo de Aplicaciones Web</span>
+                    </div>
+                    <div class="footer__socials">
+                        <a href="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW91YW5vbDlhaDdhN3N2MmpoY2p3aXk5enUyY2pvbTA2NHFlb3BwYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/spfi6nabVuq5y/giphy.gif" target="_blank" rel="noopener noreferrer"
+                            class="home__social-icon-white">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/MacREpiC" target="_blank" rel="noopener noreferrer"
+                            class="home__social-icon-white">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@Mac-mu9rf" target="_blank" rel="noopener noreferrer"
+                            class="home__social-icon-white">
+                            <i class="uil uil-youtube"></i>
+                        </a>
+                        <a href="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnV5YWRrZmx4Z2owMDRpM2k4cWZrbWV3YWdhNGR6dnd2cG13cWg3YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xEpTspH9hGwHS/giphy.gifs" target="_blank" rel="noopener noreferrer"
+                            class="home__social-icon-white">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnV5YWRrZmx4Z2owMDRpM2k4cWZrbWV3YWdhNGR6dnd2cG13cWg3YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xEpTspH9hGwHS/giphy.gif" target="_blank" rel="noopener noreferrer"
+                            class="home__social-icon-white">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; Todos los derechos reservados
+                    <script>document.write(new Date().getFullYear())</script>.
+                </p>
+            </div>
+
+        </footer>
+
+        <!--==================== SCROLL TOP ====================-->
+        <a href="" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scroll__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <audio id="clickSound" src="assets/img/click.ogg"></audio>
+        <script src="assets/js/main.js"></script>
+        <a hidden title="GDPR-compliant Web Analytics" href="https://clicky.com/101414589"><img alt="Clicky"
+                src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
+        <script async data-id="101414589" src="//static.getclicky.com/js"></script>
+        <noscript>
+            <p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101414589ns.gif" /></p>
+        </noscript>
+    </body>
+</html>
